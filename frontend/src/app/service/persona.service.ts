@@ -6,24 +6,24 @@ import { persona } from '../model/persona.model';
 @Injectable({
   providedIn: 'root'
 })
-export class PersonaService {
+export class ProyectoService {
 
   /**ESTAN YO AQUI EN TU FRONTEND Y TENIENDO LA URL LA CAMBIAS AQUI ABAJO*/
   
-  //URL = 'http://localhost:8080/personas/';
-  URL = 'https://guillermoTuApellido.heroku.com'
+  URL = 'http://localhost:8080/proyecto/';
+ // URL = 'https://guillermoTuApellido.heroku.com'//
 
   constructor(private http: HttpClient) { }
 
-/*   public getPersona(): Observable<persona>{ //ESTÁ MAL
-     return this.http.get<persona>(this.URL +'traer/perfil'); // ESTO ESTÁ MAL
+   public getPrpyecto(): Observable<persona>{ //ESTÁ MAL
+     return this.http.get<Proyecto>(this.URL +'traer/perfil'); // ESTO ESTÁ MAL*//
     
-  } */
+  } 
 
   //////////////////////////GET////////////////
 
-//Para traer los datos personales tuyos vas a hacer esto de aqui abajo.
-  getPersona(){
+//Para traer los datos personales tuyos vas a hacer esto de aqui abajo.//
+  getProyecto(){
     return this.http.get(`${this.URL}traer`)
   }
 //Para obtener la educacion vas hacer esto de abajo
@@ -45,30 +45,31 @@ export class PersonaService {
   //aqui vas hacer algo similar a lo de arriba, solo que vas a crear las funciones para actualizar/borrar los datos
 
   //Para traer los datos personales tuyos vas a hacer esto de aqui abajo.
-  postPersona(){
-    return this.http.post(`${this.URL}actualizar`) // luego fijate los parametros que necesitan
-  }
+ // postPersona(){
+ //   return this.http.post(`${this.URL}actualizar`) // luego fijate los parametros que necesitan
+ // }
 
-  postEducacion(){
-    return this.http.post(`${this.URL}actualizar`) // luego fijate los parametros que necesitan
-  }
+  //postEducacion(){
+   // return this.http.post(`${this.URL}actualizar`) // luego fijate los parametros que necesitan
+  //}
 
-  postExperiencia(){
-    return this.http.post(`${this.URL}actualizar`) // luego fijate los parametros que necesitan
-  }
+  //postExperiencia(){
+  //  return this.http.post(`${this.URL}actualizar`) // luego fijate los parametros que necesitan
+  //}
 
   //////////////////////////DELETE////////////////
-  deleteExperiencia(){
-    return this.http.delete(`${this.URL}borrar`) // luego fijate los parametros que necesitan
-  }
+  //deleteExperiencia(){
+  //  return this.http.delete(`${this.URL}borrar`) // luego fijate los parametros que necesitan
+  //}
 
-  deleteExperiencia(){
-    return this.http.delete(`${this.URL}borrar`) // luego fijate los parametros que necesitan
-  }
+  //deleteExperiencia(){
+  //  return this.http.delete(`${this.URL}borrar`) // luego fijate los parametros que necesitan
+  //}//************************************************************************************************ */
 
-  deleteExperiencia(){
-    return this.http.delete(`${this.URL}borrar`) // luego fijate los parametros que necesitan
-  }
+  //deleteExperiencia(){
+  //  return this.http.delete(`${this.URL}borrar`) // luego fijate los parametros que necesitan
+  //}
 
   //basicamente esto tendrías que hace para ir obteniendo los datos y mostrarlos en tu FRONTEND
-}
+//}
+//************************************************************************************************ */
