@@ -25,7 +25,6 @@ import { interceptorProvider } from './service/interceptor-service';
     HeaderComponent,
     LogoApComponent,
     BannerComponent,
-    AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
     HysComponent,
@@ -42,7 +41,7 @@ import { interceptorProvider } from './service/interceptor-service';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule
   ],
-  
+
   providers: [
     interceptorProvider
   ],
